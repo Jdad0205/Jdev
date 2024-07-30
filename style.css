@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Helvetica, sans-serif;
+}
+
+body {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header .logo{
+    text-decoration: none; 
+    color:red;
+    transition: .5s;
+    }
+    
+    header .logo span{
+        color: white;
+    }
+
+.logo:hover {
+    color: white;  
+}
+
+.logo:hover span{
+    color:red;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.Name{
+    color: red;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.Titulo {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.contenedor-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+
+/* Contenedor de las tarjetas de proyectos */
+.card-projects {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Estilos para cada tarjeta */
+.card {
+    width: 20rem;
+    text-align: center;
+    height: fit-content;
+    border-radius: 1rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
+    transition: .3s;
+    cursor: pointer;
+    font-size: small;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: inherit; /* Hereda el color del texto */
+    display: block; /* Asegura que el enlace se comporte como un bloque */
+}
+
+/* Estilo para la imagen dentro de la tarjeta */
+.card img {
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+/* Efecto de hover para ampliar la tarjeta y aplicar una sombra */
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6); /* Aumenta la sombra en hover */
+}
+
+/* Estilo para el texto dentro de la tarjeta */
+.card h3 {
+    margin: 0.5rem 0;
+}
+
+.card p {
+    margin: 0.5rem 0;
+}
+
+h2{
+    text-align: center;
+    margin: 2rem;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    width: 1360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedor h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1rem;
+}
+
+.pie-pagina div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.pie-pagina {
+    width: 77;
+    text-transform: uppercase;
+    padding: 2rem;
+    color: white;
+    background: black;
+    display: flex;
+    gap: 4rem;
+    list-style-type: none;
+    font-size: 15px;
+    margin-top: 4rem;
+    justify-content: center;
+    height: 6rem;
+}
+
+.text {
+    text-align: justify;
+}
+
+a {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a:hover {
+    color: red;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.card:hover {
+    background-color: rgb(154, 153, 153);
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1)
+}
+
+form {
+    background-color: black;
+    color: white;
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    display: flex;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.text {
+    width: 50%;
+    padding-left: 2rem;
+}
+
+.form {
+    width: 50%;
+    display: grid;
+    place-content: center;
+    gap: 1rem;
+}
+
+.form input {
+    width: 15rem;
+    height: 2rem;
+    border-radius: 0.3rem;
+}
+
+#message{
+    height: 5rem;
+}
+button {
+    background-color: #2567ea;
+    border-radius: 0.3rem;
+    height: 2rem;
+    gap: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        font-size: xx-small;
+
+    }
+
+    header {
+        width: 100vw;
+    }
+
+    header nav ul li a {
+        width: 100vw;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+
+    .card-projects {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        width: 100vw;
+    }
+
+    .contenedor-img {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 100vw;
+        }
+    }
+
+    .contenedor {
+        width: 100vw;
+        text-wrap: wrap;
+    }
+
+    .text {
+        width: 100vw;
+    }
+
+    form {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .form {
+        width: 100vw;
+    }
+
+    section {
+        width: 100vw;
+        justify-content: center;
+    }
+
+    footer {
+        width: 100vw;
+    }
+
+}
